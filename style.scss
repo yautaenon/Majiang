@@ -32,6 +32,13 @@
 .pai {
   font-family: "Noto Sans Symbols 2";
   margin: 0;
+  height: 60px;
+}
+.mianzi .rotate {
+  transform: rotateZ(270deg) translateY(-8px) translateX(-7px);
+  &:not(:first-child) {
+    margin-left: 16px;
+  }
 }
 #loaddata {
   display: none;
