@@ -12,8 +12,29 @@
   justify-content: center;
   align-items: center;
 }
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
 #yukouhai {
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: fit-content;
+  & .yukouhai {
+    display: flex;
+    width: 90%;
+    margin: 1vh 0;
+    justify-content: space-evenly;
+  }
+}
+#tehaiDisplay .bingpai .pai::after {
+  content: var(--tingpaiCount);
+}
+.glow {
+  filter: brightness(1.1) drop-shadow(0px 0px 10px yellow);
+}
+.darker {
+  filter: brightness(0.5);
 }
 .bingpai,
 .fulou,
@@ -33,6 +54,7 @@
   font-family: "Noto Sans Symbols 2";
   margin: 0;
   height: 60px;
+  transition: transform 80ms linear;
 }
 .mianzi .rotate {
   transform: rotateZ(270deg) translateY(-8px) translateX(-7px);
@@ -42,4 +64,30 @@
 }
 #loaddata {
   display: none;
+}
+
+.pai:hover {
+  transform: scale(1.2);
+  z-index: 1;
+  cursor: pointer;
+}
+
+#option {
+  & select {
+    display: table-row;
+    padding: 0;
+    height: 55px;
+    overflow: hidden;
+    & option {
+      display: table-cell;
+      font-size: 30px;
+      line-height: 30px;
+      padding: 10px;
+      transition: background 80ms linear;
+      &:checked {
+        background-color: var(--selection);
+        color: var(--text-bright);
+      }
+    }
+  }
 }
