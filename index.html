@@ -4,14 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahjong</title>
-    <link
-      rel="stylesheet"
-      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css"
-    />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -24,51 +18,47 @@
     <p>シャンテン数: <span id="xiangting"></span></p>
     <div id="yukouhai"></div>
     <div id="loaddata">
-      <img
-        class="pai"
-        data-pai="m1"
-        src="https://cdn.discordapp.com/emojis/1120291901296357460.webp"
-      />
-      <img class="pai" data-pai="m2" src="img/m2.gif" />
-      <img class="pai" data-pai="m3" src="img/m3.gif" />
-      <img class="pai" data-pai="m4" src="img/m4.gif" />
-      <img class="pai" data-pai="m5" src="img/m5.gif" />
-      <img class="pai" data-pai="m6" src="img/m6.gif" />
-      <img class="pai" data-pai="m7" src="img/m7.gif" />
-      <img class="pai" data-pai="m8" src="img/m8.gif" />
-      <img class="pai" data-pai="m9" src="img/m9.gif" />
-      <img class="pai" data-pai="m0" src="img/m0.gif" />
+      <img class="pai" data-pai="m1" src="https://github.com/yautaenon/Majiang/blob/main/Assets/wan_1.png?raw=true" />
+      <img class="pai" data-pai="m2" src="https://github.com/yautaenon/Majiang/blob/main/Assets/wan_2.png?raw=true" />
+      <img class="pai" data-pai="m3" src="https://github.com/yautaenon/Majiang/blob/main/Assets/wan_3.png?raw=true" />
+      <img class="pai" data-pai="m4" src="https://github.com/yautaenon/Majiang/blob/main/Assets/wan_4.png?raw=true" />
+      <img class="pai" data-pai="m5" src="https://github.com/yautaenon/Majiang/blob/main/Assets/wan_5.png?raw=true" />
+      <img class="pai" data-pai="m6" src="https://github.com/yautaenon/Majiang/blob/main/Assets/wan_6.png?raw=true" />
+      <img class="pai" data-pai="m7" src="https://github.com/yautaenon/Majiang/blob/main/Assets/wan_7.png?raw=true" />
+      <img class="pai" data-pai="m8" src="https://github.com/yautaenon/Majiang/blob/main/Assets/wan_8.png?raw=true" />
+      <img class="pai" data-pai="m9" src="https://github.com/yautaenon/Majiang/blob/main/Assets/wan_9.png?raw=true" />
+      <img class="pai" data-pai="m0" src="https://github.com/yautaenon/Majiang/blob/main/Assets/wan_0.png?raw=true" />
       <br />
-      <img class="pai" data-pai="p1" src="img/p1.gif" />
-      <img class="pai" data-pai="p2" src="img/p2.gif" />
-      <img class="pai" data-pai="p3" src="img/p3.gif" />
-      <img class="pai" data-pai="p4" src="img/p4.gif" />
-      <img class="pai" data-pai="p5" src="img/p5.gif" />
-      <img class="pai" data-pai="p6" src="img/p6.gif" />
-      <img class="pai" data-pai="p7" src="img/p7.gif" />
-      <img class="pai" data-pai="p8" src="img/p8.gif" />
-      <img class="pai" data-pai="p9" src="img/p9.gif" />
-      <img class="pai" data-pai="p0" src="img/p0.gif" />
+      <img class="pai" data-pai="p1" src="https://github.com/yautaenon/Majiang/blob/main/Assets/bing_1.png?raw=true" />
+      <img class="pai" data-pai="p2" src="https://github.com/yautaenon/Majiang/blob/main/Assets/bing_2.png?raw=true" />
+      <img class="pai" data-pai="p3" src="https://github.com/yautaenon/Majiang/blob/main/Assets/bing_3.png?raw=true" />
+      <img class="pai" data-pai="p4" src="https://github.com/yautaenon/Majiang/blob/main/Assets/bing_4.png?raw=true" />
+      <img class="pai" data-pai="p5" src="https://github.com/yautaenon/Majiang/blob/main/Assets/bing_5.png?raw=true" />
+      <img class="pai" data-pai="p6" src="https://github.com/yautaenon/Majiang/blob/main/Assets/bing_6.png?raw=true" />
+      <img class="pai" data-pai="p7" src="https://github.com/yautaenon/Majiang/blob/main/Assets/bing_7.png?raw=true" />
+      <img class="pai" data-pai="p8" src="https://github.com/yautaenon/Majiang/blob/main/Assets/bing_8.png?raw=true" />
+      <img class="pai" data-pai="p9" src="https://github.com/yautaenon/Majiang/blob/main/Assets/bing_9.png?raw=true" />
+      <img class="pai" data-pai="p0" src="https://github.com/yautaenon/Majiang/blob/main/Assets/bing_0.png?raw=true" />
       <br />
-      <img class="pai" data-pai="s1" src="img/s1.gif" />
-      <img class="pai" data-pai="s2" src="img/s2.gif" />
-      <img class="pai" data-pai="s3" src="img/s3.gif" />
-      <img class="pai" data-pai="s4" src="img/s4.gif" />
-      <img class="pai" data-pai="s5" src="img/s5.gif" />
-      <img class="pai" data-pai="s6" src="img/s6.gif" />
-      <img class="pai" data-pai="s7" src="img/s7.gif" />
-      <img class="pai" data-pai="s8" src="img/s8.gif" />
-      <img class="pai" data-pai="s9" src="img/s9.gif" />
-      <img class="pai" data-pai="s0" src="img/s0.gif" />
+      <img class="pai" data-pai="s1" src="https://github.com/yautaenon/Majiang/blob/main/Assets/suo_1.png?raw=true" />
+      <img class="pai" data-pai="s2" src="https://github.com/yautaenon/Majiang/blob/main/Assets/suo_2.png?raw=true" />
+      <img class="pai" data-pai="s3" src="https://github.com/yautaenon/Majiang/blob/main/Assets/suo_3.png?raw=true" />
+      <img class="pai" data-pai="s4" src="https://github.com/yautaenon/Majiang/blob/main/Assets/suo_4.png?raw=true" />
+      <img class="pai" data-pai="s5" src="https://github.com/yautaenon/Majiang/blob/main/Assets/suo_5.png?raw=true" />
+      <img class="pai" data-pai="s6" src="https://github.com/yautaenon/Majiang/blob/main/Assets/suo_6.png?raw=true" />
+      <img class="pai" data-pai="s7" src="https://github.com/yautaenon/Majiang/blob/main/Assets/suo_7.png?raw=true" />
+      <img class="pai" data-pai="s8" src="https://github.com/yautaenon/Majiang/blob/main/Assets/suo_8.png?raw=true" />
+      <img class="pai" data-pai="s9" src="https://github.com/yautaenon/Majiang/blob/main/Assets/suo_9.png?raw=true" />
+      <img class="pai" data-pai="s0" src="https://github.com/yautaenon/Majiang/blob/main/Assets/suo_0.png?raw=true" />
       <br />
-      <img class="pai" data-pai="z1" src="img/z1.gif" />
-      <img class="pai" data-pai="z2" src="img/z2.gif" />
-      <img class="pai" data-pai="z3" src="img/z3.gif" />
-      <img class="pai" data-pai="z4" src="img/z4.gif" />
-      <img class="pai" data-pai="z5" src="img/z5.gif" />
-      <img class="pai" data-pai="z6" src="img/z6.gif" />
-      <img class="pai" data-pai="z7" src="img/z7.gif" />
-      <img class="pai" data-pai="_" src="img/pai.gif" />
+      <img class="pai" data-pai="z1" src="https://github.com/yautaenon/Majiang/blob/main/Assets/zi_1.png?raw=true" />
+      <img class="pai" data-pai="z2" src="https://github.com/yautaenon/Majiang/blob/main/Assets/zi_2.png?raw=true" />
+      <img class="pai" data-pai="z3" src="https://github.com/yautaenon/Majiang/blob/main/Assets/zi_3.png?raw=true" />
+      <img class="pai" data-pai="z4" src="https://github.com/yautaenon/Majiang/blob/main/Assets/zi_4.png?raw=true" />
+      <img class="pai" data-pai="z5" src="https://github.com/yautaenon/Majiang/blob/main/Assets/zi_5.png?raw=true" />
+      <img class="pai" data-pai="z6" src="https://github.com/yautaenon/Majiang/blob/main/Assets/zi_6.png?raw=true" />
+      <img class="pai" data-pai="z7" src="https://github.com/yautaenon/Majiang/blob/main/Assets/zi_7.png?raw=true" />
+      <img class="pai" data-pai="_" src="https://github.com/yautaenon/Majiang/blob/main/Assets/back.png?raw=true" />
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
