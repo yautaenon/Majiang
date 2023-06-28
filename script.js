@@ -11,11 +11,13 @@ const toHaiImg = (paiList) => {
   return paiList;
 };
 const calculate = () => {
-  let hai = document.querySelector("#inputPai").value;
+  let hai = $("#inputPai").val();
   let s = Majiang.Shoupai.fromString(hai);
   let xiangtingCount = Majiang.Util.xiangting(s);
   let tingpaiList = Majiang.Util.tingpai(s);
+  let pai = Majiang.UI.pai($("#loaddata"));
 
-  document.querySelector("#xiangting").textContent = xiangtingCount;
-  document.querySelector("#yukouhai").innerHTML = toHaiImg(tingpaiList);
+  $("#xiangting").text(xiangtingCount);
+  $("#yukouhai").html(toHaiImg(tingpaiList));
+  new Majiang.UI.Shoupai($("#tehaiDisplay"), pai, s, true).redraw();
 };
